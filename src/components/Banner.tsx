@@ -4,8 +4,8 @@ import desktopVideo from "@/assets/img_banner.avif";
 import { useIsMobile } from "@/hooks/isMobile";
 import { motion } from "framer-motion";
 
-const titleLine1 = "CENTRO DE EDUCACION";
-const titleLine2 = "DE NIVEL TERCIARIO N° 18";
+const titleLine1 = "CENTRO  DE  EDUCACION";
+const titleLine2 = "DE  NIVEL  TERCIARIO  N°  18";
 
 const Banner: React.FC = () => {
   const isMobile = useIsMobile();

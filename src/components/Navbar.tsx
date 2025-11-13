@@ -48,21 +48,21 @@ export function Navbar() {
               </NavigationMenuTrigger>
               <NavigationMenuContent className='min-w-[200px] rounded bg-[#E6E9ED] py-2 text-[#2F4F4F] shadow-lg'>
                 <span
-                  onClick={() => scrollToSection("cbot")}
+                  onClick={() => scrollToSection("")}
                   className='flex cursor-pointer items-center px-6 py-2 text-sm hover:scale-105 transition'
                 >
                   <ChevronRight className='mr-2 h-5 text-[#2F4F4F]' />
                   ITEM
                 </span>
                 <span
-                  onClick={() => scrollToSection("cbot")}
+                  onClick={() => scrollToSection("")}
                   className='flex cursor-pointer items-center px-6 py-2 text-sm hover:scale-105 transition'
                 >
                   <ChevronRight className='mr-2 h-5 text-[#2F4F4F]' />
                   ITEM
                 </span>
                 <span
-                  onClick={() => scrollToSection("cbot")}
+                  onClick={() => scrollToSection("")}
                   className='flex cursor-pointer items-center px-6 py-2 text-sm hover:scale-105 transition'
                 >
                   <ChevronRight className='mr-2 h-5 text-[#2F4F4F]' />
@@ -77,7 +77,7 @@ export function Navbar() {
                 href='https://www.linkedin.com/company/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center justify-center rounded border-2 border-white p-2 transition-colors hover:bg-white hover:text-[#1a285c]'
+                className='flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white'
               >
                 <FaLinkedinIn />
               </a>
@@ -85,7 +85,7 @@ export function Navbar() {
                 href='https://www.instagram.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center justify-center rounded border-2 border-white p-2 transition-colors hover:bg-white hover:text-[#1a285c]'
+                className='flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white'
               >
                 <FaInstagram />
               </a>
@@ -109,7 +109,7 @@ export function Navbar() {
           <SheetContent side='right' className='bg-[#E6E9ED] text-'>
             <SheetHeader>
               <SheetTitle className='flex justify-center items-center gap-3'>
-                <img src={Logo} alt='CODCU.IO' className='w-15' />
+                <img src={Logo} alt='Logo' className='w-15' />
                 <p className="font-bold text-lg">CENT N°18</p>
               </SheetTitle>
             </SheetHeader>
@@ -141,6 +141,24 @@ export function Navbar() {
               <MobileLink to='' onClick={handleClose}>
                 ITEM 3
               </MobileLink>
+              <div className='mt-2 flex justify-center gap-4 lg:mt-0 lg:justify-end'>
+              <a
+                href='https://www.linkedin.com/company/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white'
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href='https://www.instagram.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white'
+              >
+                <FaInstagram />
+              </a>
+            </div>
             </nav>
           </SheetContent>
         </Sheet>
