@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import { CardsGrid } from "@/components/Cards/InfoCard";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import React from "react";
@@ -13,6 +14,9 @@ const HomePage: React.FC = () => {
       </section>
       <section id="cards">
         <CardsGrid />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
       <Footer />
     </div>
