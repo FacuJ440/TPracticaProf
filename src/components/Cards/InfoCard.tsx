@@ -101,8 +101,8 @@ export function CardsGrid({ items = cardData }: { items?: CardType[] }) {
         </CarouselContent>
 
         {/* Botones de navegación */}
-        <CarouselPrevious className="left-2 lg:-left-8" />
-        <CarouselNext className="right-4 lg:-right-8" />
+        <CarouselPrevious className="left-2 lg:-left-8 cursor-pointer" />
+        <CarouselNext className="right-4 lg:-right-8 cursor-pointer" />
       </Carousel>
     </div>
   );
