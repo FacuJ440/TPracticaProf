@@ -20,9 +20,9 @@ const Contact: React.FC = () => {
   return (
     <section id="contacto" className="py-10 bg-gray-100 text-[#2F4F4F]">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-[#2F4F4F] mb-8">Contacto</h2>
+        <h2 className="text-3xl font-bold text-[#2F4F4F] mb-8">CONTACTO</h2>
 
-        <Card className="max-w-4xl mx-auto mb-10 shadow-lg border-[#2F4F4F]">
+        <Card className="max-w-4xl mx-auto mb-10 shadow-lg border-2 border-[#2F4F4F]">
           <CardHeader>
             <CardTitle className="text-xl text-[#2F4F4F]">Nuestra Información</CardTitle>
           </CardHeader>
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className="max-w-md mx-auto shadow-xl">
+        <Card className="max-w-md mx-auto border-2 border-[#2F4F4F] shadow-xl">
           <CardHeader>
             <CardTitle className="text-2xl text-[#2F4F4F]">Envíanos un Mensaje</CardTitle>
           </CardHeader>
