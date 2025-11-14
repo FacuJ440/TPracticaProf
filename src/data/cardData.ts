@@ -382,4 +382,139 @@ export const cardData: CardType[] = [
       },
     ],
   },
+  {
+    id: 5,
+    image: "src/assets/turismo.png",
+    title: "Técnico Superior en Gestión Administrativa",
+    description:
+      "Capacitación en energías limpias, eficiencia energética y sostenibilidad ambiental aplicada a entornos productivos.",
+    actions: [
+      {
+        label: "Perfil Profesional",
+        actionType: "modal",
+        actionValue: `
+          <div class="prose max-w-none">
+            <p>
+              El <strong>Técnico Superior en Gestión de Energías Renovables</strong> está
+              capacitado para manifestar conocimientos, habilidades, destrezas, valores y
+              actitudes en situaciones reales de trabajo, conforme a criterios de
+              profesionalidad propios de su área y responsabilidad social al:
+            </p>
+            <ul>
+              <li>Diseñar, proyectar, evaluar y gestionar la instalación de sistemas de aprovechamiento de energías renovables.</li>
+              <li>Implementar, mantener y mejorar un sistema de aprovechamiento energético.</li>
+              <li>Operar y mantener componentes, equipos e instalaciones de energías renovables, uso racional y eficiencia energética teniendo en cuenta condiciones de higiene y seguridad en el trabajo y las normas de calidad medioambientales.</li>
+              <li>Gestionar los recursos necesarios para desarrollar las actividades de la organización.</li>
+              <li>Interactuar con los diferentes roles ocupacionales y áreas organizacionales.</li>
+              <li>Generar propuestas innovadoras y/o emprendimientos productivos propios del ámbito de la gestión de energías renovables, uso racional y eficiencia energética.</li>
+            </ul>
+          </div>
+        `,
+      },
+      {
+        label: "Plan de Estudios",
+        actionType: "modal",
+        actionValue: `
+          <div class="prose max-w-none">
+            <div class="overflow-x-auto">
+              <table class="min-w-full border-collapse">
+                <thead>
+                  <tr>
+                    <th class="text-left p-2 border-b">Año</th>
+                    <th class="text-left p-2 border-b">Cuatrimestre</th>
+                    <th class="text-left p-2 border-b">Espacios Curriculares</th>
+                    <th class="text-left p-2 border-b">HCS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-2 border-b align-top">1°</td>
+                    <td class="p-2 border-b align-top">1er.</td>
+                    <td class="p-2 border-b">
+                      <ul class="list-disc pl-5">
+                        <li>Comprensión y Producción de Textos</li>
+                        <li>Contexto Socioeconómico Productivo</li>
+                        <li>Matemática Aplicada</li>
+                        <li>Física Aplicada</li>
+                        <li>Energías Renovables</li>
+                        <li>Electrotecnia General</li>
+                      </ul>
+                    </td>
+                    <td class="p-2 border-b align-top">3, 3, 4, 4, 4, 4</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border-b align-top">1°</td>
+                    <td class="p-2 border-b align-top">2do.</td>
+                    <td class="p-2 border-b">
+                      <ul class="list-disc pl-5">
+                        <li>Química Aplicada</li>
+                        <li>Inglés Técnico</li>
+                        <li>Energía Solar Térmica</li>
+                        <li>Instalaciones Eléctricas</li>
+                        <li>Práctica Profesionalizante I</li>
+                      </ul>
+                    </td>
+                    <td class="p-2 border-b align-top">3, 3, 4, 4, 8</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border-b align-top">2°</td>
+                    <td class="p-2 border-b align-top">1er.</td>
+                    <td class="p-2 border-b">
+                      <ul class="list-disc pl-5">
+                        <li>Tecnología de la Representación Gráfica</li>
+                        <li>Informática Aplicada</li>
+                        <li>Energía Solar Fotovoltaica</li>
+                        <li>Energía de la Biomasa</li>
+                        <li>Práctica Profesionalizante II</li>
+                      </ul>
+                    </td>
+                    <td class="p-2 border-b align-top">3, 3, 4, 4, 8</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border-b align-top">2°</td>
+                    <td class="p-2 border-b align-top">2do.</td>
+                    <td class="p-2 border-b">
+                      <ul class="list-disc pl-5">
+                        <li>Marco Jurídico</li>
+                        <li>Energía Eólica</li>
+                        <li>Energía Minihidráulica y Geotérmica</li>
+                        <li>Uso Racional de la Energía</li>
+                        <li>Práctica Profesionalizante III</li>
+                      </ul>
+                    </td>
+                    <td class="p-2 border-b align-top">3, 4, 4, 4, 10</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border-b align-top">3°</td>
+                    <td class="p-2 border-b align-top">1er.</td>
+                    <td class="p-2 border-b">
+                      <ul class="list-disc pl-5">
+                        <li>Gestión de Seguridad, Salud Ocupacional y Medioambiente</li>
+                        <li>Gestión de la Operación de Centrales de Energías Renovables</li>
+                        <li>Arquitectura Bioclimática</li>
+                        <li>Práctica Profesionalizante IV</li>
+                      </ul>
+                    </td>
+                    <td class="p-2 border-b align-top">4, 4, 4, 12</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border-b align-top">3°</td>
+                    <td class="p-2 border-b align-top">2do.</td>
+                    <td class="p-2 border-b">
+                      <ul class="list-disc pl-5">
+                        <li>Ética Profesional y Deontología</li>
+                        <li>Gestión de Proyectos de Inversión</li>
+                        <li>Práctica Profesionalizante V</li>
+                      </ul>
+                    </td>
+                    <td class="p-2 border-b align-top">3, 4, 14</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `,
+      },
+    ],
+  },
 ];
