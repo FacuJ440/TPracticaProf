@@ -1,10 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function AboutUs() {
+  const { scrollYProgress } = useScroll();
+
+  const scaleX = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
+
   return (
-    <section className="w-full py-16 bg-muted/30">
-      <div className="max-w-6xl mx-auto px-4 md:px-8">
+    <section className="relative w-full py-16 bg-muted/30 overflow-hidden">
+
+       <motion.div
+        style={{
+          scaleX,
+          transformOrigin: "left",
+        }}
+        className="absolute mt-5 inset-0 h-36 lg:h-64 bg-[#F5E427] opacity-70 rounded-r-full pointer-events-none"
+      />
+
+      <div className="relative max-w-6xl mx-auto px-4 md:px-8">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden shadow-lg">
             <img
@@ -14,8 +29,8 @@ export default function AboutUs() {
             />
           </div>
 
-          <Card className="shadow-md border-2 border-[#2F4F4F]">
-            <CardContent className="p-4 md:p-6">
+          <Card className="shadow-md border-2 border-[#2F4F4F] relative">
+            <CardContent className="p-4 md:p-6 relative z-10">
               <h2 className="text-2xl md:text-3xl text-[#2F4F4F] font-bold tracking-tight mb-4">
                 SOBRE NOSOTROS
               </h2>
@@ -25,9 +40,9 @@ export default function AboutUs() {
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4">
                 El{" "}
                 <strong>
-                  CENT N°18 (Centro de Educación de Nivel Terciario N°18) 
+                  CENT N°18 (Centro de Educación de Nivel Terciario N°18)
                 </strong>
-                es una institución educativa pública de la Provincia de San
+                {" "}es una institución educativa pública de la Provincia de San
                 Juan, dedicada a la formación de profesionales con una sólida
                 base técnica y humana. Nuestro compromiso es brindar carreras
                 innovadoras que respondan a las demandas actuales del mundo

@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
 
         <div className="mt-2 flex justify-center gap-4 lg:mt-0 lg:w-1/3 lg:justify-end">
           <a
-            href="https://www.linkedin.com/company/"
+            href="https://www.linkedin.com/company/isft-cent-n%C2%B018/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center rounded border-2 border-white p-2 transition-colors hover:bg-white hover:text-[#1a285c]"
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/centdieciocho/?hl=es"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center rounded border-2 border-white p-2 transition-colors hover:bg-white hover:text-[#1a285c]"
