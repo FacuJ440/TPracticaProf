@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { motion, useScroll, useTransform } from "framer-motion";
+import imgAbout from "@/assets/aboutus.avif"
 
 export default function AboutUs() {
   const { scrollYProgress } = useScroll();
@@ -23,7 +24,7 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden shadow-lg">
             <img
-              src="src/assets/aboutus.avif"
+              src={imgAbout}
               alt="CENT N°18 San Juan"
               className="w-full h-full object-cover"
             />
