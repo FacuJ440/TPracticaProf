@@ -1,16 +1,14 @@
 "use client";
 
 import * as React from "react";
-import { ChevronRight, MenuIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import Logo from "@/assets/logo-cent.png";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
 import {
@@ -48,46 +46,12 @@ export function Navbar() {
         <img src={Logo} alt="Logo" className="lg:w-24 xl:w-26" />
         <NavigationMenu>
           <NavigationMenuList className="flex items-center gap-8 text-[#2F4F4F]">
-            <NavigationMenuItem className="font-semibold">
-              <NavigationMenuTrigger className="bg-transparent py-1 font-semibold cursor-pointer">
-                CARRERAS Y ACTIVIDADES
-              </NavigationMenuTrigger>
-              <NavigationMenuContent className="min-w-[200px] rounded bg-[#E6E9ED] py-2 text-[#2F4F4F] font-semibold shadow-lg">
-                <span
-                  onClick={() => scrollToSection("")}
-                  className="flex cursor-pointer items-center px-6 py-2 text-sm hover:scale-105 transition"
-                >
-                  <ChevronRight className="mr-2 h-5 text-[#2F4F4F]" />
-                  TEC. SUP. EN GESTIÓN DE ENERGÍAS RENOVABLES
-                </span>
-                <span
-                  onClick={() => scrollToSection("")}
-                  className="flex cursor-pointer items-center px-6 py-2 text-sm hover:scale-105 transition"
-                >
-                  <ChevronRight className="mr-2 h-5 text-[#2F4F4F]" />
-                  TEC. SUP. EN DESARROLLO DE SOFTWARE
-                </span>
-                <span
-                  onClick={() => scrollToSection("")}
-                  className="flex cursor-pointer items-center px-6 py-2 text-sm hover:scale-105 transition"
-                >
-                  <ChevronRight className="mr-2 h-5 text-[#2F4F4F]" />
-                  TEC. SUP. EN CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL
-                </span>
-                <span
-                  onClick={() => scrollToSection("")}
-                  className="flex cursor-pointer items-center px-6 py-2 text-sm hover:scale-105 transition"
-                >
-                  <ChevronRight className="mr-2 h-5 text-[#2F4F4F]" />
-                  CRONOGRAMA DE ACTIVIDADES Y CURSOS
-                </span>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavItem to="">QUIENES SOMOS</NavItem>
-            <NavItem to="">CONTACTO</NavItem>
+            <NavItem to="cards">CARRERAS Y ACTIVIDADES</NavItem>
+            <NavItem to="aboutus">QUIENES SOMOS</NavItem>
+            <NavItem to="contact">CONTACTO</NavItem>
             <div className="mt-2 flex justify-center gap-4 lg:mt-0 lg:justify-end">
               <a
-                href="https://www.linkedin.com/company/"
+                href="https://www.linkedin.com/company/isft-cent-n%C2%B018/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white"
@@ -95,7 +59,7 @@ export function Navbar() {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/centdieciocho/?hl=es"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white"
@@ -127,42 +91,18 @@ export function Navbar() {
               </SheetTitle>
             </SheetHeader>
             <nav className="ml-4 mt-4 flex flex-col gap-4 text-[#2F4F4F]">
-              <MobileLink to="">CARRERAS Y ACTIVIDADES</MobileLink>
-              <ul className="ml-4 flex flex-col gap-2">
-                <li className="flex items-center">
-                  <ChevronRight className="h-5 text-[#2F4F4F]" />
-                  <MobileLink to="" onClick={handleClose}>
-                    TEC. SUP. EN GESTIÓN DE ENERGÍAS RENOVABLES
-                  </MobileLink>
-                </li>
-                <li className="flex items-center">
-                  <ChevronRight className="h-5 text-[#2F4F4F]" />
-                  <MobileLink to="" onClick={handleClose}>
-                    TEC. SUP. EN DESARROLLO DE SOFTWARE
-                  </MobileLink>
-                </li>
-                <li className="flex items-center">
-                  <ChevronRight className="h-5 text-[#2F4F4F]" />
-                  <MobileLink to="" onClick={handleClose}>
-                    TEC. SUP. EN CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL
-                  </MobileLink>
-                </li>
-                <li className="flex items-center">
-                  <ChevronRight className="h-5 text-[#2F4F4F]" />
-                  <MobileLink to="" onClick={handleClose}>
-                    CRONOGRAMA DE ACTIVIDADES Y CURSOS
-                  </MobileLink>
-                </li>
-              </ul>
-              <MobileLink to="" onClick={handleClose}>
+              <MobileLink to="cards" onClick={handleClose}>
+                CARRERAS Y ACTIVIDADES
+              </MobileLink>
+              <MobileLink to="aboutus" onClick={handleClose}>
                 QUIENES SOMOS
               </MobileLink>
-              <MobileLink to="" onClick={handleClose}>
+              <MobileLink to="contact" onClick={handleClose}>
                 CONTACTO
               </MobileLink>
               <div className="mt-2 flex justify-center gap-4 lg:mt-0 lg:justify-end">
                 <a
-                  href="https://www.linkedin.com/company/"
+                  href="https://www.linkedin.com/company/isft-cent-n%C2%B018/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white"
@@ -170,7 +110,7 @@ export function Navbar() {
                   <FaLinkedinIn />
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/centdieciocho/?hl=es"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded border-2 border-[#2F4F4F] p-2 transition-colors hover:bg-white"

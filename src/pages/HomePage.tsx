@@ -1,3 +1,4 @@
+import AboutUs from "@/components/AboutUs";
 import Banner from "@/components/Banner";
 import { CardsGrid } from "@/components/Cards/InfoCard";
 import Contact from "@/components/Contact";
@@ -14,6 +15,9 @@ const HomePage: React.FC = () => {
       </section>
       <section id="cards">
         <CardsGrid />
+      </section>
+      <section id="aboutus">
+        <AboutUs />
       </section>
       <section id="contact">
         <Contact />
